@@ -2,9 +2,9 @@ function HomeSkeleton() {
     const loadingSkeletonStyle = "animate-pulse bg-[#222222] h-10 w-full mb-2";
 
     return (
-        <div className="h-full w-full container mx-auto p-4">
-            <div className="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6">
-                {[...Array(12)].map((_, index) => (
+        <div className=" container mx-auto p-4">
+            <div className="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 pl-14">
+                {[...Array(16)].map((_, index) => (
                     <div 
                         key={index} 
                         className={`${loadingSkeletonStyle} h-64 bg-gray-800 rounded-lg p-4 flex flex-col justify-end`}

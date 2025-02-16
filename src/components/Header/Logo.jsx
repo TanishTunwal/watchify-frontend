@@ -16,7 +16,7 @@ function Logo() {
             </div>
 
             <img src={logo} alt="Logo" className="h-7 w-auto ml-4 cursor-pointer z-10" />
-            <h1 className="bg-black text-2xl">WATCHIFY</h1>
+            {/* <h1 className="bg-black text-2xl">WATCHIFY</h1> */}
 
             <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
