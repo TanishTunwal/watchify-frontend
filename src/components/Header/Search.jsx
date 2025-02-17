@@ -14,7 +14,7 @@ function Search() {
         </button>
       </div>
       
-      <button className="ml-3 p-2 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center">
+      <button className="ml-3 p-2 pr-3 w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center">
         <FaMicrophone className="w-5 h-5" />
       </button>
     </div>

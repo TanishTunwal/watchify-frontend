@@ -4,7 +4,7 @@ function HomeSkeleton() {
     return (
         <div className=" container mx-auto p-4">
             <div className="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 pl-14">
-                {[...Array(16)].map((_, index) => (
+                {[...Array(20)].map((_, index) => (
                     <div 
                         key={index} 
                         className={`${loadingSkeletonStyle} h-64 bg-gray-800 rounded-lg p-4 flex flex-col justify-end`}

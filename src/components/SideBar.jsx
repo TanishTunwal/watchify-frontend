@@ -1,11 +1,15 @@
-import { FaHome, FaFire, FaVideo, FaUser } from "react-icons/fa";
+import { FaHome, FaFire, FaVideo, FaHistory, FaListUl, FaClock, FaThumbsUp } from 'react-icons/fa';
 
 const menuItems = [
   { icon: <FaHome />, text: "Home" },
   { icon: <FaFire />, text: "Trending" },
   { icon: <FaVideo />, text: "Subscriptions" },
-  { icon: <FaUser />, text: "Profile" },
+  { icon: <FaHistory />, text: "History" },
+  { icon: <FaClock />, text: "Watch Later" },
+  { icon: <FaThumbsUp />, text: "Liked Videos" },
+  { icon: <FaListUl />, text: "Playlists" },
 ];
+
 
 const SideBar = ({ isOpen }) => {
   return (

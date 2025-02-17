@@ -57,7 +57,7 @@ function LoginPage() {
               </button>
     
               <p className="text-center text-sm">
-                Don&apos;t have an account? <a href="#" className="text-blue-400">Sign up</a>
+                Don&apos;t have an account? <a href="/signup" className="text-blue-400">Sign up</a>
               </p>
             </form>
           </div>
