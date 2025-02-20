@@ -2,6 +2,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "../../images/image.png";
 import { useState } from "react";
 import SideBar from "../SideBar";
+import { Link } from "react-router-dom";
 
 function Logo() {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,9 +15,9 @@ function Logo() {
             >
                 <GiHamburgerMenu className="w-6 h-6 text-white" />
             </div>
-
-            <img src={logo} alt="Logo" className="h-7 w-auto ml-4 cursor-pointer z-20 mr-5" />
-            {/* <h1 className="bg-black text-2xl">WATCHIFY</h1> */}
+            <Link to="/">
+                <img src={logo} alt="Logo" className="h-7 w-auto ml-4 cursor-pointer z-20 mr-5" />
+            </Link>
 
             <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
@@ -24,4 +25,5 @@ function Logo() {
 }
 
 export default Logo;
+
 

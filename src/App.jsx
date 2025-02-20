@@ -4,6 +4,9 @@ import HomePage from "./components/HomePage";
 import SignupPage from "./components/SignUpPage";
 import LoginPage from "./components/LoginPage";
 import VideoLoadPage from "./components/VideoLoadPage";
+import VideoListingPage from "./components/VideoListingPage";
+import ProfilePage from "./components/ProfilePage";
+
 
 function App() {
   const location = useLocation(); // To get the current location (route)
@@ -18,6 +21,9 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/video" element={<VideoLoadPage />} />
+        <Route path="/list" element={<VideoListingPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        {/* <Route path="/x" element={<VideoCard />} /> */}
       </Routes>
     </>
   );
