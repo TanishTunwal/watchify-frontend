@@ -27,34 +27,25 @@ const videos = [
 const VideoListView = () => {
   return (
     <div className="flex min-h-screen bg-black text-white">
-      {/* Sidebar (If you have one, else remove this div) */}
       <aside className="hidden md:block w-[250px] bg-black-900 min-h-screen"></aside>
-
-      {/* Main Content */}
       <main className="flex-1 p-4 pt-16">
         <div className="max-w-6xl mx-auto">
-          {/* Responsive Grid Layout */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {videos.map((video) => (
               <div
                 key={video.id}
                 className="flex flex-col items-center bg-gray-900 rounded-xl shadow-md p-4 transition-transform duration-300 hover:scale-105"
               >
-                {/* Thumbnail */}
                 <img
                   src={video.thumbnail}
                   alt={video.title}
                   className="w-full h-40 rounded-lg object-cover"
                 />
-
-                {/* Video Info */}
                 <div className="mt-4 text-center">
                   <h2 className="text-lg font-semibold">{video.title}</h2>
                   <p className="text-sm text-gray-400">{video.channel}</p>
                   <p className="text-sm text-gray-500">{video.views}</p>
                 </div>
-
-                {/* Play Button */}
                 <div className="mt-3">
                   <FaPlayCircle size={36} className="text-white" />
                 </div>

@@ -6,6 +6,7 @@ import LoginPage from "./components/LoginPage";
 import VideoLoadPage from "./components/VideoLoadPage";
 import VideoListingPage from "./components/VideoListingPage";
 import ProfilePage from "./components/ProfilePage";
+import PlayList from "./components/PlayList";
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
         <Route path="/video" element={<VideoLoadPage />} />
         <Route path="/list" element={<VideoListingPage />} />
         <Route path="/profile" element={<ProfilePage />} />
-        {/* <Route path="/x" element={<VideoCard />} /> */}
+        <Route path="/x" element={<PlayList />} /> 
       </Routes>
     </>
   );
